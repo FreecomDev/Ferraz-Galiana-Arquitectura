@@ -1,0 +1,43 @@
+<style>
+  .sliding-text-container {
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      width: 100%;
+      height: 70px;
+  }
+
+  .sliding-text-wrapper {
+      display: flex;
+      white-space: nowrap;
+      animation: slide 20s linear infinite;
+  }
+
+  .sliding-text {
+			font-size: 30px;
+			font-family: 'Roboto Condensed', sans-serif;
+      display: inline-block;
+      padding-right: 2rem;
+      margin-top: 20px;
+ /* 
+Espaciado entre repeticiones */
+  }
+
+  @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+  }
+  /* Media Query para móviles */
+  @media (max-width: 768px) {
+      .sliding-text-wrapper {
+          animation: slide 10s linear infinite; /* Cambia la velocidad a 10 segundos en móviles */
+      }
+  }
+</style>
+
+<div class="sliding-text-container">
+    <div class="sliding-text-wrapper">
+        <div class="sliding-text">JÁVEA  MORAIRA  PEGO  DENIA  BENISSA  ALTEA  FINESTRAT  BENIDORM  LA NUCÍA  POLOP  CALLOSA DE ENSARRIÀ  OLIVA  ARAGÓN  TERUEL  ZARAGOZA  HUESCA</div>
+        <div class="sliding-text">JÁVEA  MORAIRA  PEGO  DENIA  BENISSA  ALTEA  FINESTRAT  BENIDORM  LA NUCÍA  POLOP  CALLOSA DE ENSARRIÀ  OLIVA  ARAGÓN  TERUEL  ZARAGOZA  HUESCA</div>
+    </div>
+</div>

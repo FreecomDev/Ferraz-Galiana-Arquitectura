@@ -1,0 +1,11 @@
+/* Ocultar separador de cabecera de Divi */
+#main-header {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    }
+    
+    /* Personalizar el color del botón desplegable del menú superior */
+    span.mobile_menu_bar.mobile_menu_bar_toggle::before {
+    color: #ffff;
+    }
