@@ -1,0 +1,43 @@
+/* Estilos generales del formulario */
+.wpcf7-form {
+    max-width: 700px;
+    margin: auto;
+}
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    font-size: 15px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+}
+.wpcf7-form .wpcf7-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+.wpcf7-form p {
+    margin-bottom: 15px;
+}
+/* Estilo de los enlaces (Aviso legal, Política de privacidad) */
+.wpcf7-form a {
+    text-decoration: underline;
+    color: #8b8c89;
+}
+.wpcf7-submit {
+    border: 1px solid #000;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.wpcf7-submit:hover {
+    background: #000;
+    color: #fff;
+}
